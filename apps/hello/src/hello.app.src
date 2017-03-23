@@ -5,9 +5,15 @@
   {mod, { hello_app, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    cowboy,
+    jiffy
    ]},
-  {env,[]},
+  {env,[
+   {http_port, 8080},
+   {http_acceptors_num, 100},
+   {tcp_opts, []}
+  ]},
   {modules, []},
 
   {maintainers, []},
