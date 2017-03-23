@@ -1,0 +1,16 @@
+{application, hello,
+ [{description, "An example of production ready hello world application"},
+  {vsn, git},
+  {registered, []},
+  {mod, { hello_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
